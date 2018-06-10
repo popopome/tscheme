@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tokenizer should make valid tokens 1`] = `
+Object {
+  "begin": Object {
+    "col": 0,
+    "line": 0,
+    "pos": 0,
+  },
+  "end": Object {
+    "col": 1,
+    "line": 0,
+    "pos": 1,
+  },
+  "type": "OPEN_PAR",
+  "value": "(",
+}
+`;
+
+exports[`tokenizer should make valid tokens 2`] = `
+Object {
+  "begin": Object {
+    "col": 2,
+    "line": 0,
+    "pos": 2,
+  },
+  "end": Object {
+    "col": 3,
+    "line": 0,
+    "pos": 3,
+  },
+  "type": "SYMBOL",
+  "value": "a",
+}
+`;
+
+exports[`tokenizer should make valid tokens 3`] = `
+Object {
+  "begin": Object {
+    "col": 4,
+    "line": 0,
+    "pos": 4,
+  },
+  "end": Object {
+    "col": 5,
+    "line": 0,
+    "pos": 5,
+  },
+  "type": "SYMBOL",
+  "value": "b",
+}
+`;
+
+exports[`tokenizer should make valid tokens 4`] = `
+Object {
+  "begin": Object {
+    "col": 6,
+    "line": 0,
+    "pos": 6,
+  },
+  "end": Object {
+    "col": 7,
+    "line": 0,
+    "pos": 7,
+  },
+  "type": "SYMBOL",
+  "value": "c",
+}
+`;
+
+exports[`tokenizer should make valid tokens 5`] = `
+Object {
+  "begin": Object {
+    "col": 8,
+    "line": 0,
+    "pos": 8,
+  },
+  "end": Object {
+    "col": 18,
+    "line": 0,
+    "pos": 18,
+  },
+  "type": "STRING",
+  "value": "d1 d2 d3",
+}
+`;
+
+exports[`tokenizer should make valid tokens 6`] = `
+Object {
+  "begin": Object {
+    "col": 19,
+    "line": 0,
+    "pos": 19,
+  },
+  "end": Object {
+    "col": 22,
+    "line": 0,
+    "pos": 22,
+  },
+  "type": "NUMBER",
+  "value": 123,
+}
+`;
+
+exports[`tokenizer should report error 1`] = `"{\\"pos\\":{\\"pos\\":8,\\"line\\":0,\\"col\\":7},\\"msg\\":\\"String should be closed with \\\\\\"\\"}"`;
